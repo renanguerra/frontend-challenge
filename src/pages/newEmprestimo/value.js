@@ -113,7 +113,7 @@ export default function NewEmprestimo(){
     useEffect(()=>{
         const copyValue = []
         axios.get('https://demo7273790.mockable.io/suggestedvalues').then(res=>{
-            res.data.suggestedValues.map(e =>{
+            res.data.suggestedValues.map((e) =>{
                 const value = e.toFixed(2)
 
                 copyValue.push(value)

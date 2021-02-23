@@ -106,7 +106,7 @@ export default function NewEmprestimo(){
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'A quantidade de meses que você selecionou é inválido! Verifique seu limite e tente novamente',
+                text: 'A quantidade de meses que você selecionou é inválido!',
               })
         }
         
@@ -132,7 +132,7 @@ export default function NewEmprestimo(){
 
             <div style={{textAlign: 'center'}}>
                 <div>
-                    <Input placeholder='00' type='text'></Input>
+                    <Input onChange={e => setTimeSelected(e.target.value)} placeholder='00' type='text'></Input>
                     <Title>meses </Title>
                 </div>
 

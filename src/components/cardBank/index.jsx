@@ -47,6 +47,7 @@ const Contratar = styled.span`
     color: #D22688;
     float: right;
     margin-right:10px;
+    cursor:pointer;
 `
 const DivLeft = styled.div`
     display:flex;
